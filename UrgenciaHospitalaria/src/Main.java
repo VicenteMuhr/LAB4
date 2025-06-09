@@ -1,9 +1,6 @@
 import java.io.*;
 import java.util.*;
 
-// (Paciente, AreaAtencion, Hospital, GeneradorPacientes classes remain unchanged from previous version)
-// ... (omitted for brevity, assume they are the same as the last provided code block) ...
-
 class Paciente{
     String nombre;
     String apellido;
@@ -84,7 +81,6 @@ class AreaAtencion{
             pacientesHeap.offer(p);
             p.setEstado("En area de atención");
         }else{
-            // KEEP this one, as it specifically indicates a system constraint that might be analyzed
             System.out.println("[SATURACION] Área " + NOMBRE + " ya está saturada. No se pudo ingresar al paciente " + p.getId());
         }
     }
